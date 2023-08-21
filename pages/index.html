@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="">
+  <title>index</title>
+</head>
+
+<body>
+  <%- include('./layout/nav', {page: "index" }); -%>
+    <main class="admin ms-296 p-5 d-flex flex-column justify-content-between">
+      <div>
+        <div class="d-flex justify-content-between mb-5">
+          <div class="d-flex">
+            <h2 class="me-5 fw-bold">Admin</h2>
+            <a href="#" class="d-flex align-items-center text-dark fw-bold"><span class="material-icons text-success">
+                add </span> Add New
+              Admin</a>
+          </div>
+          <div class="d-flex">
+            <span class="material-icons me-4 pointer"> search </span>
+            <span class="material-icons pointer"> notifications_active </span>
+          </div>
+        </div>
+        <!-- table -->
+        <table class="table table-hover table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">
+                <div class="d-flex align-items-center pointer">
+                  ID
+                  <span class="material-icons ms-1 text-success">
+                    arrow_downward
+                  </span>
+                </div>
+              </th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Verified</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="py-3" scope="row">#1</th>
+              <td class="py-3">Emir Wicks</td>
+              <td class="py-3">emir.wicks@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer" data-bs-toggle="modal" data-bs-target="#viewAdmin">
+                  visibility </span><span class="material-icons pointer"> edit </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#2</th>
+              <td class="py-3">Zaina Goldsmith</td>
+              <td class="py-3">zaina.goldsmith@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#3</th>
+              <td class="py-3">Mahima Lopez</td>
+              <td class="py-3">mahima.lopez@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#4</th>
+              <td class="py-3">Pharrell Murray</td>
+              <td class="py-3">pharrell.murray@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#5</th>
+              <td class="py-3">Annika Mcbride</td>
+              <td class="py-3">annika.mcbride@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#6</th>
+              <td class="py-3">Fatimah Clark</td>
+              <td class="py-3">Fatimah Clark</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#7</th>
+              <td class="py-3">Klaudia Rhodes</td>
+              <td class="py-3">klaudia.rhodes@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#8</th>
+              <td class="py-3">Tillie Lucero</td>
+              <td class="py-3">tillie.lucero@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#9</th>
+              <td class="py-3">Sabrina Stephenson</td>
+              <td class="py-3">sabrina.stephenson@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th class="py-3" scope="row">#10</th>
+              <td class="py-3">Annie Smith</td>
+              <td class="py-3">annie.smith@mail.com</td>
+              <td class="py-3">Yes</td>
+              <td class="py-3 text-end">
+                <span class="material-icons me-4 pointer"> visibility </span><span class="material-icons pointer"> edit
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- nav -->
+      <nav aria-label="Page">
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link text-success"><span class="material-icons"> chevron_left </span></a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link text-success" href="#">1</a>
+          </li>
+          <li class="page-item" aria-current="page">
+            <a class="page-link text-success" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-success" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link text-success" href="#"><span class="material-icons"> navigate_next </span></a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewAdmin" tabindex="-1" aria-labelledby="viewAdminLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 p-4">
+          <div class="d-flex">
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emir.jpeg?raw=true"
+              alt="emir" class="object-cover me-4" style="width: 141px; height: 141px" />
+            <div class="flex-grow-1">
+              <div class="d-flex mb-3">
+                <div>
+                  <p class="mb-2">#1</p>
+                  <p>Admin</p>
+                  <h3 class="mb-2 fs-4 fw-bold">Emir Wicks</h3>
+                  <p class="text-gray-600 fs-14">emir.wicks@mail.com</p>
+                </div>
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div>
+                <a class="w-100 d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                  href="#adminViewCollapse" role="button" aria-expanded="false" aria-controls="adminViewCollapse">
+                  <span class="btn btn-sm btn-light fs-14"> Verified</span>
+                  <span class="material-icons text-success"> expand_more </span>
+                </a>
+
+                <div class="collapse" id="adminViewCollapse">
+                  <div class="d-flex pt-4">
+                    <a href="#" class="btn btn-outline-danger flex-grow-1 rounded-1 fw-bold me-3">Deactivate</a>
+                    <a href="#" class="btn btn-success flex-grow-1 rounded-1 fw-bold">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

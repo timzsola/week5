@@ -1,0 +1,12 @@
+.active > .page-link {
+  color: $white !important;
+  background: $success;
+  border-color: $success;
+}
+.page-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

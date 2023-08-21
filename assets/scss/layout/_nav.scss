@@ -1,0 +1,22 @@
+.nav {
+  width: 296px;
+  height: 100vh;
+  position: fixed;
+  background: $gray-100;
+  .active {
+    color: $success;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 32px;
+      background: $success;
+    }
+  }
+  .account-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
